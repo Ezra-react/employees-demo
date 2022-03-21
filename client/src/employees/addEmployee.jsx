@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import axios from 'axios'
 const AddEmployee = () => {
     const location = useLocation();
+    console.log("the location is ", location);
     const [employeeForm, setEmployeeForm] = useState({
         first_name: "",
         last_name: "",

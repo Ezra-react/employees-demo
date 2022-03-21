@@ -18,7 +18,7 @@ const Employees = () => {
   return (
     <Fragment>
     <div> 
-      <Link style={{margin: "10px", width: "200px", border:"1px solid black"}} to="/">Add</Link>
+      <Link to="/" state={{edit: false, id: ""}}>Add</Link>
         <ul>
             {employees.map(employee => (
             <EmployeeComponent key={employee.Id}  employee={employee} />
